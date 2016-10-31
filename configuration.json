@@ -1,0 +1,44 @@
+{
+	"title": "Parameters",
+	"type": "object",
+	"required": [
+		"#certificate",
+		"gaId",
+		"bucket",
+		"metrics",
+		"dimensions"
+	],
+	"properties": {
+		"#certificate": {
+			"title": "Certificate",
+			"type": "text",
+			"minLength": 1,
+			"default": ""
+		},
+		"gaId": {
+			"title": "Google Analytics Id",
+			"type": "string",
+			"minLength": 1,
+			"default": ""
+		},
+		"metrics": {
+			"title": "Metrics",
+			"type": "string",
+			"minLength": 1,
+			"default": ""
+		},
+		"dimensions": {
+			"title": "Dimensions",
+			"type": "string",
+			"minLength": 1,
+			"default": ""
+		},
+
+		"bucket" : {
+			"title": "Output bucket",
+			"type": "string",
+			"minLength": 1,
+			"default": "in.c-ex-mcf-api"
+		}
+	}
+}
