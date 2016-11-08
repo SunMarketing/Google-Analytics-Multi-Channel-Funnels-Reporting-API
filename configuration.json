@@ -1,44 +1,78 @@
 {
-	"title": "Parameters",
-	"type": "object",
-	"required": [
-		"#certificate",
-		"gaId",
-		"bucket",
-		"metrics",
-		"dimensions"
-	],
-	"properties": {
-		"#certificate": {
-			"title": "Certificate",
-			"type": "text",
-			"minLength": 1,
-			"default": ""
-		},
-		"gaId": {
-			"title": "Google Analytics Id",
-			"type": "string",
-			"minLength": 1,
-			"default": ""
-		},
-		"metrics": {
-			"title": "Metrics",
-			"type": "string",
-			"minLength": 1,
-			"default": ""
-		},
-		"dimensions": {
-			"title": "Dimensions",
-			"type": "string",
-			"minLength": 1,
-			"default": ""
-		},
-
-		"bucket" : {
-			"title": "Output bucket",
-			"type": "string",
-			"minLength": 1,
-			"default": "in.c-ex-mcf-api"
-		}
-	}
+  "title": "Parameters",
+  "type": "object",
+  "required": [
+    "#project_id",
+    "#private_key_id",
+    "#private_key",
+    "#client_email",
+    "#client_id",
+    "gaId",
+    "bucket",
+    "metrics",
+    "dimensions",
+    "since"
+  ],
+  "properties": {
+    "#project_id": {
+      "title": "Project Id",
+      "type": "text",
+      "minLength": 1,
+      "default": ""
+    },
+    "#private_key_id": {
+      "title": "Private Key Id",
+      "type": "text",
+      "minLength": 1,
+      "default": ""
+    },
+    "#private_key": {
+      "title": "Private Key",
+      "type": "text",
+      "minLength": 1,
+      "default": ""
+    },
+    "#client_email": {
+      "title": "Client email",
+      "type": "text",
+      "minLength": 1,
+      "default": ""
+    },
+    "#client_id": {
+      "title": "Client Id",
+      "type": "text",
+      "minLength": 1,
+      "default": ""
+    },
+    "gaId": {
+      "title": "Google Analytics Id",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "metrics": {
+      "title": "Metrics",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "dimensions": {
+      "title": "Dimensions",
+      "type": "string",
+      "minLength": 1,
+      "default": ""
+    },
+    "days": {
+      "title": "Since",
+      "type": "string",
+      "minLength": 1,
+      "default": "-14 day"
+    },
+    "bucket" : {
+      "title": "Output bucket",
+      "type": "string",
+      "minLength": 1,
+      "default": "in.c-ex-mfc-api"
+    }
+  }
 }
