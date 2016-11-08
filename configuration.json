@@ -62,7 +62,7 @@
       "minLength": 1,
       "default": ""
     },
-    "days": {
+    "since": {
       "title": "Since",
       "type": "string",
       "minLength": 1,
